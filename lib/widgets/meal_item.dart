@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meal_recipes/models/meal.dart';
 import 'package:meal_recipes/screens/meal_detail_screen.dart';
 
+
+//sets up each item inside a category
 class MealItem extends StatelessWidget {
   final String id;
   final String title;

@@ -22,6 +22,7 @@ class MainDrawer extends StatelessWidget {
           );
   }
 
+//sets up the drawer of the app in main menu
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -33,7 +34,7 @@ class MainDrawer extends StatelessWidget {
             padding: EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
             child: Text(
-              'Cooking Up!',
+              'Paano Kaon!!',
               style: TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 30,

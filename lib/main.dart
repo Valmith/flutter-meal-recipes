@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meal_recipes/dummy_data.dart';
+import 'package:meal_recipes/data.dart';
 import 'package:meal_recipes/screens/categories_screen.dart';
 import 'package:meal_recipes/screens/category_meals_screen.dart';
 import 'package:meal_recipes/screens/filters_screen.dart';
@@ -73,9 +73,13 @@ class _MyAppState extends State<MyApp> {
       title: 'Meal Recipes',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.pink,
-          secondary: Colors.amber,
+          primary: Color.fromARGB(255, 145, 255, 105),
+          secondary: Color.fromARGB(255, 127, 211, 71),
         ),
+
+
+
+
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(

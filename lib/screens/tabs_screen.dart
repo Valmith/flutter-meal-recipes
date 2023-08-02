@@ -20,12 +20,11 @@ class _TabsScreenState extends State<TabsScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _pages = [
       {
         'page': CategoriesScreen(),
-        'title': 'Meal Recpies',
+        'title': 'Main Menu',
       },
       {
         'page': FavoritesScreen(widget.favoriteMeals),
@@ -34,7 +33,6 @@ class _TabsScreenState extends State<TabsScreen> {
     ];
   }
 
-  //will give the index automatically
   void _selectPage(int index) {
     setState(() {
       _selectedPageIndex = index;
@@ -45,17 +43,21 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_pages[_selectedPageIndex]['title']),
+        title: Text(
+          _pages[_selectedPageIndex]['title'],
+          style: TextStyle(
+            color: Color.fromARGB(255, 0, 0, 0), // Replace with your desired color
+          ),
+        ),
       ),
       drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        unselectedItemColor: Colors.white,
-        selectedItemColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Color.fromARGB(255, 145, 255, 105),
+        unselectedItemColor: Color.fromARGB(255, 183, 183, 183),
+        selectedItemColor: Color.fromARGB(255, 255, 255, 255), // Replace with your desired color
         currentIndex: _selectedPageIndex,
-        // type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.category),

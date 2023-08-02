@@ -73,8 +73,7 @@ const dummyMeals = [
       '4 Tomatoes',
       '1 Tablespoon of Olive Oil',
       '1 Onion',
-      '250g Spaghetti',
-      'Spices',
+      '250g Spaghetti',      'Spices',
       'Cheese (optional)'
     ],
     steps: [
@@ -190,7 +189,7 @@ const dummyMeals = [
     id: 'm5',
     categories: [
       'c2'
-          'c5',
+      'c5',
       'c10',
     ],
     title: 'Salad with Smoked Salmon',
